@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<chapter version="5.0" xmlns="http://docbook.org/ns/docbook">
+  <title>Classes</title>
+  <para>
+    <table frame="all">
+      <title>dk.dma.enav.model.ship.ShipId</title>
+      <tgroup cols="2" align="left" colsep="1" rowsep="1">
+        <tbody>
+          <row>
+            <entry>id</entry>
+            <entry>java.lang.String</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="all">
+      <title>dk.dma.enav.model.geometry.Position</title>
+      <tgroup cols="2" align="left" colsep="1" rowsep="1">
+        <tbody>
+          <row>
+            <entry>latitude</entry>
+            <entry>double</entry>
+          </row>
+          <row>
+            <entry>longitude</entry>
+            <entry>double</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="all">
+      <title>dk.dma.enav.model.geometry.Circle</title>
+      <tgroup cols="2" align="left" colsep="1" rowsep="1">
+        <tbody>
+          <row>
+            <entry>center</entry>
+            <entry>dk.dma.enav.model.geometry.Position</entry>
+          </row>
+          <row>
+            <entry>radius</entry>
+            <entry>double</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="all">
+      <title>dk.dma.enav.model.Country</title>
+      <tgroup cols="2" align="left" colsep="1" rowsep="1">
+        <tbody>
+          <row>
+            <entry>mids</entry>
+            <entry>java.util.HashSet</entry>
+          </row>
+          <row>
+            <entry>name</entry>
+            <entry>java.lang.String</entry>
+          </row>
+          <row>
+            <entry>twoLetter</entry>
+            <entry>java.lang.String</entry>
+          </row>
+          <row>
+            <entry>threeLetter</entry>
+            <entry>java.lang.String</entry>
+          </row>
+          <row>
+            <entry>number</entry>
+            <entry>java.lang.String</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="all">
+      <title>dk.dma.enav.model.geometry.Line</title>
+      <tgroup cols="2" align="left" colsep="1" rowsep="1">
+        <tbody>
+          <row>
+            <entry>end</entry>
+            <entry>dk.dma.enav.model.geometry.Position</entry>
+          </row>
+          <row>
+            <entry>start</entry>
+            <entry>dk.dma.enav.model.geometry.Position</entry>
+          </row>
+          <row>
+            <entry>cs</entry>
+            <entry>dk.dma.enav.model.geometry.CoordinateSystem</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="all">
+      <title>dk.dma.enav.model.voyage.Route</title>
+      <tgroup cols="2" align="left" colsep="1" rowsep="1">
+        <tbody>
+          <row>
+            <entry>waypoints</entry>
+            <entry>java.util.ArrayList</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="all">
+      <title>dk.dma.enav.model.voyage.endpoint.UnLocode</title>
+      <tgroup cols="2" align="left" colsep="1" rowsep="1">
+        <tbody>
+          <row>
+            <entry>unlocode</entry>
+            <entry>java.lang.String</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="all">
+      <title>dk.dma.enav.model.voyage.Voyage</title>
+      <tgroup cols="2" align="left" colsep="1" rowsep="1">
+        <tbody>
+          <row>
+            <entry>from</entry>
+            <entry>dk.dma.enav.model.voyage.endpoint.Endpoint</entry>
+          </row>
+          <row>
+            <entry>to</entry>
+            <entry>dk.dma.enav.model.voyage.endpoint.Endpoint</entry>
+          </row>
+          <row>
+            <entry>activeRoute</entry>
+            <entry>dk.dma.enav.model.voyage.ActiveRoute</entry>
+          </row>
+          <row>
+            <entry>plannedRoute</entry>
+            <entry>dk.dma.enav.model.voyage.Route</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="all">
+      <title>dk.dma.enav.model.geometry.Shape</title>
+      <tgroup cols="2" align="left" colsep="1" rowsep="1">
+        <tbody>
+          <row>
+            <entry>cs</entry>
+            <entry>dk.dma.enav.model.geometry.CoordinateSystem</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="all">
+      <title>dk.dma.enav.model.ship.ShipInformation</title>
+      <tgroup cols="2" align="left" colsep="1" rowsep="1">
+        <tbody>
+          <row>
+            <entry>country</entry>
+            <entry>dk.dma.enav.model.Country</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="all">
+      <title>dk.dma.enav.model.ship.Ship</title>
+      <tgroup cols="2" align="left" colsep="1" rowsep="1">
+        <tbody>
+          <row>
+            <entry>id</entry>
+            <entry>dk.dma.enav.model.ship.ShipId</entry>
+          </row>
+          <row>
+            <entry>latest</entry>
+            <entry>dk.dma.enav.model.geometry.Position</entry>
+          </row>
+          <row>
+            <entry>current</entry>
+            <entry>dk.dma.enav.model.voyage.Voyage</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="all">
+      <title>dk.dma.enav.model.voyage.Waypoint</title>
+      <tgroup cols="2" align="left" colsep="1" rowsep="1">
+        <tbody>
+          <row>
+            <entry>eta</entry>
+            <entry>java.util.Date</entry>
+          </row>
+          <row>
+            <entry>latitude</entry>
+            <entry>double</entry>
+          </row>
+          <row>
+            <entry>line</entry>
+            <entry>dk.dma.enav.model.geometry.Line</entry>
+          </row>
+          <row>
+            <entry>leg</entry>
+            <entry>dk.dma.enav.model.voyage.Waypoint$Leg</entry>
+          </row>
+          <row>
+            <entry>longitude</entry>
+            <entry>double</entry>
+          </row>
+          <row>
+            <entry>rot</entry>
+            <entry>java.lang.Double</entry>
+          </row>
+          <row>
+            <entry>speed</entry>
+            <entry>java.lang.Double</entry>
+          </row>
+          <row>
+            <entry>turnRad</entry>
+            <entry>java.lang.Double</entry>
+          </row>
+          <row>
+            <entry>xtdPort</entry>
+            <entry>java.lang.Double</entry>
+          </row>
+          <row>
+            <entry>xtdStarboard</entry>
+            <entry>java.lang.Double</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="all">
+      <title>dk.dma.enav.model.geometry.BoundingBox</title>
+      <tgroup cols="2" align="left" colsep="1" rowsep="1">
+        <tbody>
+          <row>
+            <entry>maxLatitude</entry>
+            <entry>double</entry>
+          </row>
+          <row>
+            <entry>maxLongitude</entry>
+            <entry>double</entry>
+          </row>
+          <row>
+            <entry>minLatitude</entry>
+            <entry>double</entry>
+          </row>
+          <row>
+            <entry>minLongitude</entry>
+            <entry>double</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </para>
+</chapter>
