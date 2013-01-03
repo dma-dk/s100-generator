@@ -12,16 +12,6 @@
   <description>Cake Book</description>
 
  <build>
-    <!-- To define the plugin version in your parent POM -->
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>com.agilejava.docbkx</groupId>
-          <artifactId>docbkx-maven-plugin</artifactId>
-          <version>2.0.14</version>
-        </plugin>
-       </plugins>
-    </pluginManagement>
     <!-- To use the plugin goals in your POM or parent POM -->
     <plugins>
       <plugin>
